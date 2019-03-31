@@ -28,7 +28,7 @@ void Monte_Carlo_Process(double s, double vol, vector<vector<double>>&overall_pa
 			path.push_back(s);
 			s = s*exp((interest - 0.5*vol*vol)*dt + vol*sqrt(dt)*normal_dist(random_dev));
 			//s = s + s*interest*dt + s*vol*sqrt(dt)*normal_dist(random_dev);
-			//the  PDe formula should not be used here
+			//the  euler formula should not be used here for we have the analytic formula,only the dt is specially small
 		}
 		overall_path.push_back(path);
 		s = temp_s;
