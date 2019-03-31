@@ -6,3 +6,5 @@ the interest rate ,simulation_times are defined  as const in the Option_P1.h for
 the Barrier Option base class will store the code about monte carlo Price and Delta
 the sub-class of Barrier Options are just interface.
 this way will save a lot of time and easy to mange the code.
+
+The demand for the code is in file project1
